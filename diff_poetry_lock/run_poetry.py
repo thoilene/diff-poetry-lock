@@ -7,6 +7,8 @@ import pydantic
 from poetry.core.packages.package import Package
 from poetry.packages import Locker
 
+import sys 
+sys.path.insert(0,'/workspaces/diff-poetry-lock/')
 from diff_poetry_lock.github import GithubApi
 from diff_poetry_lock.settings import Settings
 
